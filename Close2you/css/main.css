@@ -1,0 +1,521 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  max-width: 1900px;
+}
+
+body {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.header {
+  margin-top: 33px;
+  width: 100%;
+  left: 0;
+  margin-bottom: 9px;
+  position: relative;
+}
+
+.header__position {
+  vertical-align: bottom;
+}
+
+.main__container {
+  width: 1167px;
+  margin-left: 365px;
+  position: ;
+  text-align: center;
+}
+
+.main__img_title {
+  margin-bottom: 5px;
+}
+
+.card__1{
+position: absolute;
+}
+
+.custom{
+  position: relative;
+  top: -600px;
+  left: 405px;
+}
+
+.custom__brend{
+  position: relative;
+  top: -619px;
+  left: 405px;
+}
+
+.custom__price{
+  position: relative;
+  top: -419px;
+  left: 176px;
+}
+
+.custom__text{
+  padding-right: 45px;
+}
+
+.main__suit {
+  margin-top: 84px;
+  width: 500px;
+  font-size: 27px;
+  text-align-last: left;
+}
+
+.main__siit_brend {
+  font-size: 23px;
+  width: 400px;
+  /* margin-top: 10px; */
+  color: #7d7d7d;
+  text-align: left;
+}
+
+.main__siit_text {
+  margin-top: 30px;
+  text-align: left;
+  font-size: 22px;
+  width: 400px;
+  color: #838382;
+}
+
+.сlothing_name {
+  text-align-last: left;
+}
+
+.price {
+  text-align: right;
+}
+
+.clothing__brend {
+  text-align: left;
+  font-size: 17px;
+  width: 400px;
+  color: #838382;
+}
+
+.product {
+  width: 500px;
+  font-size: 27px;
+}
+
+.bacground__1 {
+  margin-top: -5px;
+  margin-bottom: 35px;
+  background: #dcdcdc;
+  margin-left: 0;
+  margin-right: 0;
+} 
+
+.bacground {
+  margin-top: 56px;
+  padding-bottom: 73px;
+  background: #dcdcdc;
+}
+
+.boot__0 {
+  margin-top: 58px;
+  margin-bottom: -120px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.four__image {
+  display: flex;
+}
+
+.photo {
+  position: relative;
+  width: 98%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+.photo__text {
+  position: relative;
+  font-size: 44px;
+  width: 400px;
+  color: #fff;
+  top: -165px;
+  left: 35px;
+}
+
+.img-1__bacground {
+  filter: brightness(40%);
+}
+
+.img-1__bacground:hover {
+  filter: grayscale(0%);
+}
+
+.main__image_collection {
+  margin-top: 58px;
+}
+
+.footer__heading {
+  margin-left: 365px;
+  width: 400px;
+  font-size: 46px;
+  color: #98a184;
+}
+
+.footer__container {
+  margin-left: 365px;
+}
+
+.footer__margin {
+  margin-top: 73px;
+}
+
+.footer__title {
+  font-size: 36px;
+  width: 500px;
+  color: #7d7d7d;
+}
+
+.footer__text {
+  width: 400px;
+  font-size: 36px;
+  color: #7d7d7d;
+}
+
+/* Модалка --------------------------------------------------*/
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  color: #fff;
+  font-size: 44px;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  font-size: 44px;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* Модальное окно для 2 фото */
+/* Модальное окно для 2 фото -------------------------------------------*/
+.modal2 {
+  color: #fff;
+  font-size: 44px;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+.close2 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+#myImg2 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg2:hover {
+  opacity: 0.7;
+}
+/* Модальное окно для 3 фото ---------------------------------------------*/
+.modal3 {
+  color: #fff;
+  font-size: 44px;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+.close3 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+#myImg3 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg3:hover {
+  opacity: 0.7;
+}
+
+/* Модальное окно для 4 фото ---------------------------------------------*/
+.modal4 {
+  color: #fff;
+  font-size: 44px;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+.close4 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close4:hover,
+.close4:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+#myImg4 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg4:hover {
+  opacity: 0.7;
+}
+/* Модальное окно для 5 фото ---------------------------------------------*/
+.modal5 {
+  color: #fff;
+  font-size: 44px;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+.close5 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close5:hover,
+.close5:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+#myImg5 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg5:hover {
+  opacity: 0.7;
+}
+/* Модальное окно для 6 фото ---------------------------------------------*/
+.modal6 {
+  color: #fff;
+  font-size: 44px;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+.close6 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close6:hover,
+.close6:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+#myImg6 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg6:hover {
+  opacity: 0.7;
+}
